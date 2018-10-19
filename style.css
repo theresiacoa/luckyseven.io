@@ -1,0 +1,269 @@
+  body {
+    background-color: #FFF;
+    margin: 0 auto;
+  }
+
+  .header {
+    background-color: #466995;
+    border-bottom: 1px solid #466995;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .header a {
+    margin: 30px auto;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px; 
+    font-weight: 300;
+
+  }
+
+  .header-right {
+    float: right;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 30px;
+    color: black;
+  }
+  
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+    margin: 0 auto;
+  }
+  
+  .column img {
+    -webkit-transition: 0.4s ease;
+    margin: 5px;
+    vertical-align: middle;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+
+.row:after {
+    display: table;
+    clear: both;
+}
+
+  .image1 {
+    background-color: #466995;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+  .bendera {
+  float: right;
+  line-height: 10px;
+}
+
+  .copyright {
+  float: right;
+  line-height: 10px;
+}
+
+.image1 h3 {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-style: Arial;
+  line-height: 100px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+  width: 60%;
+  color: white;
+  opacity: 0.75;
+  }
+
+  .image1 p {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: Arial;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 70px;
+    margin-left: 30px;
+    width: 60%;
+    color: white;
+    opacity: 0.75;
+  }
+
+  .copyright p2 {
+    float: right;
+    line-height: 10px;
+  }
+
+  .bendera {
+    float: right;
+    line-height: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  
+  .row:after {
+    display: table;
+    clear: both;
+  }
+
+  .main-block {
+    padding-top: 100px;
+  }
+
+  .bg-img {
+    height: 625px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .bg-img::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Norway_Afghanistan_Locator.png');
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+    width: 100%;
+    height: 625px;
+    z-index: -2;
+    opacity: 0.4;
+  }
+
+  .intro {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 50px;
+    opacity: 1;
+  }
+
+  .intro h2 {
+    font-weight: 500;
+  }
+    
+  .bestpick {
+    background-color: #ffffff;
+    display: block;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+  .bestpick h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #466995;
+  }
+
+  /*text over image on hover*/
+  .hover-img {
+    position: relative;
+    width: 100%;
+  }
+  .img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .hovertext {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*put the text in absolute center*/
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    margin-left: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+
+  .hover-img:hover .overlay{
+    background-color: black;
+    opacity: 0.8;
+  }
+
